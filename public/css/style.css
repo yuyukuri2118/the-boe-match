@@ -367,7 +367,18 @@ header .nav li {
 
 
 
-
+#contents .mido {
+	display: flex;
+	flex-direction: column;			/*中のブロックを並べる向きの指定。これは縦に並べる意味。*/
+	width: 95%;
+	margin-left: 2.5%;						/*ブロック幅*/
+	margin-bottom: 20px;			/*ブロックの下に空ける余白*/
+	background: #fff;				/*背景色*/
+	border-radius: 10px;				/*角丸の指定。ほんの少し角が丸くなります。*/
+	overflow: hidden;				/*角丸から内容が飛び出ないよう、飛び出た部分を非表示にする指定*/
+	box-shadow: 0px 0px 20px rgba(0,0,0,0.3);
+	text-align: center;	/*ボックスの影。右へ、下へ、ぼかし幅の順番。0,0,0は黒の事で0.3は色が30%出た状態の事。*/
+}
 
 
 /*１カラムあたりの設定*/
@@ -402,6 +413,17 @@ header .nav li {
 	min-height: 0%;
 }
 
+#contents .midotext {
+	text-align: center;				/*上下、左右へのボックスの外に空けるスペース*/
+}
+
+#contents .midotext h1 {
+	text-align: center;		
+	line-height: 1;
+	margin-bottom: 0px;	/*下のテキストとの間に空けるスペース*/
+	padding: 5%;
+	font-size: 240%;
+}
 
 #contents .list-column-container3 {
 	display: flex;
